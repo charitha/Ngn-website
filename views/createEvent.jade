@@ -1,0 +1,72 @@
+extends layout
+block content
+
+    h1#ngnHeader NGN - Next Gen Network
+    p.successMsg
+        #addEvent
+            fieldset
+                div.leftCol
+                    h4 Add New Event
+                div.leftCol
+                    label.labelTag Event Title
+                    input#inputEventTitle(type='text', placeholder='Event Name')
+                div.rightCol
+                    label.labelTag Location
+                    input#inputLocation(type='text', placeholder='Location')
+                br
+                div.leftCol
+                    label.labelTag Date & Time
+                    input#inputDate(type='date')
+                    input#inputTime(type='time')
+                div.rightCol
+                    label#labelEventTitle.labelTag Duration
+                    select#inputDuration
+                        option 1
+                        option 1.5
+                        option 2
+                        option 2.5
+                        option 3
+                        option 3.5
+                        option 4
+                        option 4.5
+                        option 5
+                        option 5.5
+                        option 6
+                    label hh
+
+                br
+                div.leftCol
+                    label#labelEventTitle.labelTag Event Type
+                    select#inputEventType
+                        option Tech Friday
+                        option Internal
+                        option External
+                div.rightCol
+                    label#labelEventTitle.labelTag Technology
+                    input#inputKeyTags(type='text', placeholder='Technology')
+                br
+                br
+                div.leftCol
+                    label#labelEventTitle.labelTag Conducted By
+                    input#inputConduct(type='text', placeholder='Conducted By')
+
+                div.rightCol
+                    label#labelEventTitle.labelTag Resource Link
+                    input#inputResourceLink(type='text', placeholder='Resource Link')
+                br
+                br
+
+                div.leftCol
+                    label#labelEventTitle.labelTag Upload image
+                    input#inputImage(type='file', placeholder='Upload image')
+
+                div.rightCol
+                    label#labelEventTitle.labelTag Upload ppt
+                    input#inputPpt(type='file', placeholder='Upload ppt')
+                br
+                br
+                div.leftCol
+                    label#labelEventTitle.labelTag Description
+                    input#inputDescription(type='textarea' style='width:700px; height:100px;')
+                br
+                button#btnCreateEvent.submitButton Create Event
